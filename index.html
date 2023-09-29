@@ -38,10 +38,19 @@
               <strong>Email</strong>: xuzhengzhe810 [at] gmail.com  
               <!-- &nbsp  <strong>Office</strong>: COM3-02-21 -->
             </p>
-            
+
+            <!-- 随机显示head.png和head2.png, 尺寸为<td style="padding:2%;width:30%;max-width:33%" -->
             <td style="padding:2%;width:30%;max-width:33%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/head.png" class="hoverZoomLink">
+              <script type="text/javascript">
+                var random = Math.random();
+                if (random < 0.5) {
+                  document.write("<img style='width:100%;max-width:100%' alt='profile photo' src='images/head.png' class='hoverZoomLink'>");
+                } else {
+                  document.write("<img style='width:100%;max-width:100%' alt='profile photo' src='images/head2.png' class='hoverZoomLink'>");
+                }
+              </script>
             </td>
+
             <td style="padding:2.5%;width:67%;vertical-align:middle">
               <p>
                 I am a senior student majoring in Automation (Robotics Track) at Harbin Institute of Technology (Shenzhen), advised by <a href='http://faculty.hitsz.edu.cn/chenhaoyao/'>Prof. Haoyao Chen</a>. 
